@@ -1,0 +1,133 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0 ;
+}
+
+a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* SECCIÓN DEL HEADER */
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+header .icons span{
+    color: white;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+nav .profile-link a:hover{
+    border-bottom: none;
+}
+
+
+/* SECCIÓN DEL HOME */
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url(/assets/img/Cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home-main-text{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+}
+
+.home-main-button{
+    width: 110px;
+    height: 50px;
+    background: #47cfac;
+    display: grid;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.home-main-button:hover{
+    background-color: whitesmoke;
+}
+
+.home-main-button a{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.home-main-button a:hover{
+    color: #47cfac;;
+}
